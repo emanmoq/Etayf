@@ -2376,7 +2376,7 @@ a:focus, a:hover, .btn-link:focus, .btn-link:hover {
 }
 #testi img {
     height: 80px;
-    width: 80px;
+    width: 80px !important;
     position: relative;
 }
 #testi svg {
