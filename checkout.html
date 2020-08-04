@@ -1573,7 +1573,7 @@
                       <td class="text-right"> QAR 2,408.00</td>
                     </tr>
                             </tbody></table>
-                  <p class="cartbt"><a href="cart.html" class="btn btn-primary">View Cart</a>&nbsp;&nbsp;&nbsp;<a href="checkout.html" class="btn btn-primary">Checkout</a></p>
+                  <p class="cartbt"><a href="cart.html" class="btn btn-primary">View Cart</a>&nbsp;&nbsp;&nbsp;<a href="https://madebyhand.in/opencart/MS02/Multistore04/index.php?route=checkout/checkout" class="btn btn-primary">Checkout</a></p>
                 </div>
               </li>
                 </ul>
@@ -1865,7 +1865,6 @@
     </header>
 </div>
 <div id="common-home">
-c
   <script type="text/javascript">
     $(document).ready(function () {
       $("#slideshow0").owlCarousel({
@@ -2872,175 +2871,81 @@ c
 
       <div id="content" class="col-sm-9">
         <ul class="breadcrumb">
-          <li><a href="index.html"><i class="fa fa-home"></i></a></li>
-          <li><a href="cart.html">Shopping Cart</a></li>
-        </ul>
+        <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+        <li><a href="cart.html">Shopping Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
         <div class="head-t">
-        <h4><span>Shopping Cart
-                  &nbsp;(0.00kg)
-          <hr></span></h4>
-        </div>
-  
-        <form  method="post" enctype="multipart/form-data">
-  
-          <div class="account-responsive">
-            <div class="table-account col-xs-12">
-                            <div class="acco-table col-xs-12">
-              <div class="crt-img col-md-3 col-xs-12 col-sm-6 text-left">
-                <div class="text-left"> <a href="assets/image/cache/catalog/product/23-700x608.jpg"><img src="assets/image/cache/catalog/product/23-700x608.jpg" alt="CROSS pen & pencil set 350105 Classic Century " title="justo hendrerit tempor a in " class="img-thumbnail"></a> </div>
-              </div>
-              <div class="crt-dsc text-left col-md-9 col-xs-12 col-sm-6">
-                <a class="acnt-ttl" href="assets/image/cache/catalog/product/23-700x608.jpg">CROSS pen & pencil set 350105 Classic Century
-                  </a>
-               
-  
-                                   <br>
-                  <small>Reward Points: 2400</small>                 
-                 <div class="text-left ac-md">Product 16</div>
-                 <div class="text-left ac-pr col-md-4 col-sm-6 col-xs-6"> QAR 602.00</div>
-                <div class="text-left ac-ct col-md-4 col-sm-6 col-xs-6"><div class="input-group btn-block" style="max-width: 200px;">
-                    <input type="text" name="quantity[80]" value="4" size="1" class="form-control">
-                    <span class="input-group-btn">
-                    <button type="submit" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Update"><i class="fa fa-refresh"></i></button>
-                    <button type="button" data-toggle="tooltip" title="" class="btn btn-danger"data-original-title="Remove"><i class="fa fa-times-circle"></i></button>
-                    </span></div></div>
-                
-                <div class="text-left ac-tl col-md-4 col-sm-12 col-xs-12">$2,408.00</div>
-                </div>
-                 </div>
-              
-             
-  
-                        </div>
+      <h4><span>Checkout</span></h4><hr>
+  </div>
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title"><a href="#collapse-checkout-option" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle" aria-expanded="true">Step 1: Checkout Options <i class="fa fa-caret-down"></i></a></h4>
           </div>
-        </form>
-              <h2 class="accon">What would you like to do next?</h2>
-        <p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
-        <div class="panel-group" id="accordion">         <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title"><a href="#collapse-coupon" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">Use Coupon Code <i class="fa fa-caret-down"></i></a></h4>
+          <div class="panel-collapse collapse in" id="collapse-checkout-option" aria-expanded="true">
+            <div class="panel-body"><div class="row afflog">
+  <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
+    <div class="well">
+    <h1>New Customer</h1>
+    <p>Checkout Options:</p>
+    <div class="radio">
+      <label>         <input type="radio" name="account" value="register" checked="checked">
+                Register Account</label>
     </div>
-    <div id="collapse-coupon" class="panel-collapse collapse">
-      <div class="panel-body">
-        <label class="col-sm-2 control-label" for="input-coupon">Enter your coupon here</label>
-        <div class="input-group">
-          <input type="text" name="coupon" value="" placeholder="Enter your coupon here" id="input-coupon" class="form-control">
-          <span class="input-group-btn">
-          <input type="button" value="Apply Coupon" id="button-coupon" data-loading-text="Loading..." class="btn btn-primary">
-          </span></div>
-        <script type="text/javascript">
-  $('#button-coupon').on('click', function() {
-      $.ajax({
-          url: 'index.php?route=extension/total/coupon/coupon',
-          type: 'post',
-          data: 'coupon=' + encodeURIComponent($('input[name=\'coupon\']').val()),
-          dataType: 'json',
-          beforeSend: function() {
-              $('#button-coupon').button('loading');
-          },
-          complete: function() {
-              $('#button-coupon').button('reset');
-          },
-          success: function(json) {
-              $('.alert-dismissible').remove();
-  
-              if (json['error']) {
-                  $('.breadcrumb').after('<div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
-  
-                  $('html, body').animate({ scrollTop: 0 }, 'slow');
-              }
-  
-              if (json['redirect']) {
-                  location = json['redirect'];
-              }
-          },
-          error: function(xhr, ajaxOptions, thrownError) {
-              alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-          }
-      });
-  });
-  //--></script>
-      </div>
+        <div class="radio">
+      <label>         <input type="radio" name="account" value="guest">
+                Guest Checkout</label>
     </div>
+        <p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</p>
+    <input type="button" value="Continue" id="button-account" data-loading-text="Loading..." class="btn btn-primary">
   </div>
-  
-                  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title"><a href="#collapse-voucher" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Use Gift Certificate <i class="fa fa-caret-down"></i></a></h4>
+</div>
+  <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
+    <div class="well">
+    <h1>Returning Customer</h1>
+    <p>I am a returning customer</p>
+    <div class="form-group">
+      <label class="control-label" for="input-email">E-Mail</label>
+      <input type="text" name="email" value="" placeholder="E-Mail" id="input-email" class="form-control">
     </div>
-    <div id="collapse-voucher" class="panel-collapse collapse">
-      <div class="panel-body">
-        <label class="col-sm-2 control-label" for="input-voucher">Enter your gift certificate code here</label>
-        <div class="input-group">
-          <input type="text" name="voucher" value="" placeholder="Enter your gift certificate code here" id="input-voucher" class="form-control">
-          <span class="input-group-btn">
-          <input type="submit" value="Apply Gift Certificate" id="button-voucher" data-loading-text="Loading..." class="btn btn-primary">
-          </span> </div>
-        <script type="text/javascript">
-  $('#button-voucher').on('click', function() {
-      $.ajax({
-          url: 'index.php?route=extension/total/voucher/voucher',
-          type: 'post',
-          data: 'voucher=' + encodeURIComponent($('input[name=\'voucher\']').val()),
-          dataType: 'json',
-          beforeSend: function() {
-              $('#button-voucher').button('loading');
-          },
-          complete: function() {
-              $('#button-voucher').button('reset');
-          },
-          success: function(json) {
-              $('.alert-dismissible').remove();
-              
-              if (json['error']) {
-                  $('.breadcrumb').after('<div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
-                  
-                  $('html, body').animate({ scrollTop: 0 }, 'slow');
-              }
-              
-              if (json['redirect']) {
-                  location = json['redirect'];
-              }
-          },
-          error: function(xhr, ajaxOptions, thrownError) {
-              alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-          }
-      });
-  });
-  //--></script>
-      </div>
-    </div>
+    <div class="form-group">
+      <label class="control-label" for="input-password">Password</label>
+      <input type="password" name="password" value="" placeholder="Password" id="input-password" class="form-control">
+      <a href="https://madebyhand.in/opencart/MS02/Multistore04/index.php?route=account/forgotten">Forgotten Password</a></div>
+    <input type="button" value="Login" id="button-login" data-loading-text="Loading..." class="btn btn-primary">
   </div>
-  
-           </div>
-         <br>
-        <div class="row">
-          <div class="col-sm-6 col-xs-12 col-md-5 crt-ttl">
-            <div class="total-bordered">
-                          <div>
-                <div class="text-right col-sm-6 col-xs-6 totl"><strong>Sub-Total:</strong></div>
-                <div class="text-right col-sm-6 col-xs-6 totl">$2,000.00</div>
-              </div>
-                          <div>
-                <div class="text-right col-sm-6 col-xs-6 totl"><strong>Eco Tax (-2.00):</strong></div>
-                <div class="text-right col-sm-6 col-xs-6 totl">$8.00</div>
-              </div>
-                          <div>
-                <div class="text-right col-sm-6 col-xs-6 totl"><strong>VAT (20%):</strong></div>
-                <div class="text-right col-sm-6 col-xs-6 totl">$400.00</div>
-              </div>
-                          <div>
-                <div class="text-right col-sm-6 col-xs-6 totl"><strong>Total:</strong></div>
-                <div class="text-right col-sm-6 col-xs-6 totl">$2,408.00</div>
-              </div>
-                        </div>
+</div>
+</div>
+</div>
           </div>
         </div>
-        <div class="buttons clearfix">
-          <div class="pull-left"><a href="https://madebyhand.in/opencart/MS02/Multistore04/index.php?route=common/home" class="btn btn-primary">Continue Shopping</a></div>
-          <div class="pull-right"><a href="https://madebyhand.in/opencart/MS02/Multistore04/index.php?route=checkout/checkout" class="btn btn-primary">Checkout</a></div>
+                <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">Step 2: Account &amp; Billing Details</h4>
+          </div>
+          <div class="panel-collapse collapse" id="collapse-payment-address">
+            <div class="panel-body"></div>
+          </div>
         </div>
+                        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">Step 3: Payment Method</h4>
+          </div>
+          <div class="panel-collapse collapse" id="collapse-payment-method">
+            <div class="panel-body"></div>
+          </div>
         </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">Step 4: Confirm Order</h4>
+          </div>
+          <div class="panel-collapse collapse" id="collapse-checkout-confirm">
+            <div class="panel-body"></div>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
   </div>
 </div>
