@@ -5515,6 +5515,7 @@ height: 35px;
     }
 	.addtocart, .wish, .view, .bquickv{
 		display: inline-block;
+        width:auto !important
 	}
 	.rating {
         margin: 5px 0;
