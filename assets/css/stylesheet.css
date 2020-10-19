@@ -3046,7 +3046,7 @@ a:focus {
 .product-thumb .image img {
 	border-radius: 4px;
 }
-#product .product-thumb .image ,#special  .product-thumb .image ,#cattab  .product-thumb .image {
+#product .product-thumb .image ,#special  .product-thumb .image ,#cattab  .product-thumb .image ,.zi  .image {
     height:270px;
 }
 
@@ -5229,7 +5229,7 @@ a::before {
 }
 
 .rating .fa-star-o {
-    color: #fcae01;
+    color: #1275AC;
     font-size: 13px;
 }
 
