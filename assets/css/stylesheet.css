@@ -767,7 +767,48 @@ a {
 	border-radius: 4px;
 	box-shadow: none;
 }
-@media (max-width: 478px) {
+.heroContent h1{
+    color:white;
+    font-size:60px;
+
+}
+.heroContent{
+    position: absolute;
+    left: 8%;
+    top: 26%;
+    max-width: 54%;
+}
+.heroContent p{
+    font-size:30px;
+    color:white;
+    line-height: 1;;
+}
+.heroSliderItem{
+    position: relative;
+}
+.purchaseBtn{
+    background-color:#F99000;
+    color:white;
+    border-radius: 5px;
+    width:190px;
+    margin-top:50px;
+    height:50px;
+}
+#banner0{
+    height:1000px;
+    overflow: hidden;
+}
+#banner0 .banner-wrapper , #banner0 .banner-slide{
+    height:100%
+}
+#banner0 .banner-wrapper .banner-slide a img{
+    width:auto;
+    height:100%;
+}
+.extra-button span{
+    font-size:13px;
+}
+@media (max-width: 478px) { 
 	#cart .dropdown-menu li > div {
 		min-width: 100%;
 	}
@@ -2774,8 +2815,8 @@ a:focus, a:hover, .btn-link:focus, .btn-link:hover {
 }
 .product-thumb .absbtn button, .product-layout .absbtn .bquickv a ,
 .product-list .button-group button.cartb{
-    background-color: #fff;
-    fill: #4c4c4c;
+    background-color: black;
+    fill: white;;
     width: 40px;
     height: 40px;
     border-radius: 5px;
@@ -2785,6 +2826,13 @@ a:focus, a:hover, .btn-link:focus, .btn-link:hover {
     display: inline-block;
     transition: 0.3s ease;
     border: 1px solid #e3e3e3;
+    opacity: 1;
+}
+.product-thumb .absbtn {
+    width:auto;
+}
+.product-thumb .absbtn button{
+    display: block;
 }
 .product-list .absbtn .bquickv {
     display: inline-block;
@@ -2837,10 +2885,10 @@ a:focus, a:hover, .btn-link:focus, .btn-link:hover {
 }
 .sale {
     position: absolute;
-    left: 10px;
+    left: 53%;
     top: 10px;
     font-size: 12px;
-    background-color:#0081B8;
+    background-color:#F99000;
     text-transform: uppercase;
     padding: 5px;
     margin: 0px;
@@ -2998,7 +3046,7 @@ a:focus {
 .product-thumb .image img {
 	border-radius: 4px;
 }
-#product .product-thumb .image  {
+#product .product-thumb .image ,#special  .product-thumb .image ,#cattab  .product-thumb .image {
     height:270px;
 }
 
@@ -3030,13 +3078,13 @@ a:focus {
 .absbtn {
     position: absolute;
     transition: all .3s ease-in-out;
-    opacity: 0;
-    right: 0px;
+    opacity: 1;
     left: 0px;
-    top: 31%;
+    top: 3%;
     display: inline-block;
     vertical-align: middle;
     margin: 0 auto;
+    width:auto !important
 }
 .button-group button.cartb {
     left: 0;
@@ -3044,7 +3092,7 @@ a:focus {
     top: 44%;
     position: absolute;
     margin: 0 auto;
-    display: block;
+    display: inline-block;
     padding: 8px 35px;
     border: 1px solid #0081B8;
     border-radius: 4px;
@@ -3053,7 +3101,7 @@ a:focus {
     font-size: 14px;
     text-transform: uppercase;
     transition: all .3s ease-in-out;
-    opacity: 0;
+    opacity: 1;
     line-height: 21px;
 }
 .button-group button.cartb:hover{
@@ -4240,6 +4288,16 @@ opacity: 1;
 }
 .owl-item  div{
     width:100%;
+}
+.box-product #blog .webi-blog-image{
+    height:270px;
+    overflow: hidden;
+}
+.box-product #blog .write-comment{
+    margin:0;
+}
+.box-product #blog .blogdt{
+    margin-top: 10px;;
 }
 @media (min-width: 1600px) and (max-width: 1849px) {
     .carts {
@@ -5725,7 +5783,9 @@ height: 35px;
 	}
     .wish, .view, .bquickv{
         margin: 0 4px; 
+        width:auto !important;
     }
+    
     .bs h4 a {
         font-size: 18px;
         font-weight: 400;
