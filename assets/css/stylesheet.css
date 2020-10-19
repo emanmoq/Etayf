@@ -4327,6 +4327,18 @@ HEIGHT:40PX;
 font-size: 11PX;
 line-height: 28px;;
 }
+#winter-search-category option {
+    padding:10px;
+    border-bottom: .5px solid #C9C9C9;
+}
+.btn.btn-info.editBtn{
+background-color: #555555;;
+width:65px
+}
+.btn.deleteBtn{
+    background-color:#E30E10;
+    width:65px;
+}
 @media (min-width: 1600px) and (max-width: 1849px) {
     .carts {
         width: 40%;
