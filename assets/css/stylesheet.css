@@ -777,6 +777,7 @@ a {
     left: 8%;
     top: 26%;
     max-width: 54%;
+    z-index: 2;
 }
 .heroContent p{
     font-size:30px;
@@ -786,6 +787,16 @@ a {
 .heroSliderItem{
     position: relative;
 }
+.heroSliderItem:before{
+    position: absolute;
+    content:"";
+    background: transparent linear-gradient(270deg, #00000000 0%, #000000D1 100%) 0% 0% no-repeat padding-box;
+        top:0;
+    left:0;
+    z-index:1;
+    width:100%;
+    height:100%;
+}
 .purchaseBtn{
     background-color:#F99000;
     color:white;
@@ -793,6 +804,7 @@ a {
     width:190px;
     margin-top:50px;
     height:50px;
+    line-height: 34px;;
 }
 #banner0{
     height:1000px;
@@ -3047,7 +3059,7 @@ a:focus {
 	border-radius: 4px;
 }
 #product .product-thumb .image ,#special  .product-thumb .image ,#cattab  .product-thumb .image ,.zi  .image {
-    height:270px;
+    height:220px;
 }
 
 .product-thumb .image a {
@@ -4339,6 +4351,9 @@ width:65px
     background-color:#E30E10;
     width:65px;
 }
+.product-layout.col-xs-12.cless{
+    padding:0 5px;
+}
 @media (min-width: 1600px) and (max-width: 1849px) {
     .carts {
         width: 40%;
@@ -4528,8 +4543,26 @@ width:65px
         margin-bottom: 10px;
     }
 }
-@media (min-width: 390px) and (max-width: 767px){
-		
+@media (min-width: 370px) and (max-width: 767px){
+    .heroContent{
+        left: 8%;
+        top: 5%;
+        max-width: 100%;
+    }
+
+    .heroContent h1 {
+        font-size: 25px;}
+        .heroContent p {
+            font-size: 13px;}
+
+            .purchaseBtn {
+              
+                width: 121px;
+                margin-top: 0;
+                height: 36px;
+                line-height: 32px;
+                padding: 0 !important;
+            }	
 }
 
 
