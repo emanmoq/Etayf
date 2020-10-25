@@ -820,6 +820,64 @@ a {
 .extra-button span{
     font-size:13px;
 }
+.wishlostTitle{
+   font-size:25px;
+   color:#000000;
+   font-weight:500; 
+}
+.col-xs-12.wishlostTitle{
+    padding:0;
+    margin:0;
+}
+.rat.goldRate .rating .fa-star-o{
+    color:#aaa;
+}
+.wishListDtae{
+    font-size:17px;
+    color:#aaa;
+
+}
+.wishlistBox .price{
+color:#1275AC;
+font-size:20px;
+}
+#button-cart i{
+    margin-right:5px;
+}
+#content .product-grid.product-layout, #content .product-list.product-layout.wishlistBox {
+    padding-bottom:50px;
+    border-bottom: 1px solid #D1D1D1;
+}
+#content .product-grid.product-layout, #content .product-list.product-layout.wishlistBox:last-child{
+    border-bottom: 0;;
+}
+.wishlistBox .catlist-des{
+    font-size:18px;
+    margin-bottom: 10px;
+    max-height: 90px;
+}
+.wishlistBox .cap{
+    float:left;
+    width:90%;
+}
+.deleteItem{
+    text-align: center;
+    font-size: 13px;
+    color:#222222;
+}
+.wishlistBox  .deleteItem{
+    float:right
+}
+.wishlistBox  .deleteItem i{
+    color:#222222;
+    font-size:40px;
+}
+.product-list.wishlistBox .caption {
+    width: 74%;
+}
+.product-list.wishlistBox .product-thumb .image{
+    width:25%;
+}
 @media (max-width: 478px) { 
 	#cart .dropdown-menu li > div {
 		min-width: 100%;
