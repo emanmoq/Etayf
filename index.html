@@ -1360,7 +1360,7 @@
                       <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->Desktops</option>
                     <option value="42">
                       <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->Cameras</option>
-                  
+
                   </select>
                 </div>
                 <!-- Winter Search End  -->
@@ -1820,10 +1820,135 @@
     <div class="container">
       <div class="row">
         <aside id="column-left" class="col-md-3 col-sm-4 col-xs-12">
+          <div class="filter bestsell onspro next-prevb">
+            <div class="head-t">
+              <h4 class="heading"><span>Filter</span></h4>
+            </div>
+            <div id="filter" class="owl-theme owl-carousel">
+              <div class="multi-row">
+                <div class="product-layout col-xs-12">
+                  <div class="product-thumb transition">
+                    <div class="filterCategorie">
+                      <h4 class="heading"><span>Type</span></h4>
+                      <form>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="Markets" name="Markets">
+                          <label class="custom-control-label" for="Markets">Markets</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="Items" name="Items">
+                          <label class="custom-control-label" for="Items">Items</label>
+                        </div>
+
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product-layout col-xs-12">
+                  <div class="product-thumb transition">
+                    <div class="filterCategorie">
+                      <h4 class="heading"><span>Category</span></h4>
+                      <form>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="All1" name="All1">
+                          <label class="custom-control-label" for="All1">All</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="Mobile" name="Mobile">
+                          <label class="custom-control-label" for="Mobile">Mobile phones</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="Tablets" name="Tablets">
+                          <label class="custom-control-label" for="Tablets">Tablets</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="Desktops" name="Desktops">
+                          <label class="custom-control-label" for="Desktops">Desktops
+                          </label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="Cameras" name="Cameras">
+                          <label class="custom-control-label" for="Cameras">Cameras</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="Earphones" name="Earphones">
+                          <label class="custom-control-label" for="Earphones">Earphones and speakers
+                          </label>
+                        </div>
+
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="product-layout col-xs-12">
+                  <div class="product-thumb transition">
+                    <div class="filterCategorie">
+                      <h4 class="heading"><span>By Price</span></h4>
+                      <form>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="All1" name="All1">
+                          <label class="custom-control-label" for="All1">All</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="" name="">
+
+                          <label class="custom-control-label" for="">0 QAR - 100 QAR</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="" name="">
+                          <label class="custom-control-label" for="">100 QAR - 200 QAR</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="" name="">
+                          <label class="custom-control-label" for="">200 QAR - 300 QAR</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="" name="">
+                          <label class="custom-control-label" for="">300 QAR - 400 QAR</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="" name="">
+                          <label class="custom-control-label" for="">400 QAR - 500 QAR</label>
+                        </div>
+
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">
+            $(document).ready(function () {
+              $("#filter").owlCarousel({
+                itemsCustom: [
+                  [0, 1]
+                ],
+                autoPlay: false,
+                loop: false,
+                navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                navigation: true,
+                pagination: true,
+                addClassActive: true
+              });
+            });
+          </script>
           <div class="leftbnr">
             <div class="beffect">
               <a href="#">
                 <img src="assets/image/cache/catalog/leftbanner/1-270x400.jpg" alt="left1"
+                  class="img-responsive center-block" />
+              </a>
+            </div>
+          </div>
+          <div class="leftse">
+            <div class="beffect">
+              <a href="#">
+                <img src="assets/image/cache/catalog/leftse/1-270x330.jpg" alt="left2"
                   class="img-responsive center-block" />
               </a>
             </div>
@@ -2228,383 +2353,522 @@
               });
             });
           </script>
-          <div class="leftse">
-            <div class="beffect">
-              <a href="#">
-                <img src="assets/image/cache/catalog/leftse/1-270x330.jpg" alt="left2"
-                  class="img-responsive center-block" />
-              </a>
-            </div>
-          </div>
-          <div class="arrivalpro onspro next-prevb">
-            <div class="head-t">
-              <h4 class="heading"><span>Arrivel</span></h4>
-            </div>
-
-            <div id="arrivel" class="owl-theme owl-carousel">
-
-              <div class="multi-row">
-
-                <div class="product-layout leftpro col-xs-12">
-                  <div class="product-thumb transition">
-                    <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
-                          src="assets/image/cache/catalog/product/13-282x245.jpg"
-                          alt="Hoco Black power Bank 13000 mah&quot;" title="Hoco Black power Bank 13000 mah&quot;"
-                          class="img-responsive center-block" /></a>
-                      <!-- Webiarch Images Start -->
-                      <a href="#"><img src="assets/image/cache/catalog/product/14-282x245.jpg"
-                          class="img-responsive second-img" alt="hover image" /></a>
-
-
-
-
-
-
-                      <!-- End -->
-                    </div>
-                    <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
-
-                      <h4 class="protitle"><a href="#">Hoco Black
-                          power Bank 13000 mah&quot;</a></h4>
-
-                      <div class="price">
-                        QAR 40,00
-                      </div>
-
-                    </div>
-
-
-
-                  </div>
-                </div>
-
-
-
-                <div class="product-layout leftpro col-xs-12">
-                  <div class="product-thumb transition">
-                    <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
-                          src="assets/image/cache/catalog/product/31-282x245.jpg"
-                          alt="GC Watcges SSport class xxl gents black and rose Gold x76004G2s"
-                          title="GC Watcges SSport class xxl gents black and rose Gold x76004G2s"
-                          class="img-responsive center-block" /></a>
-                      <!-- Webiarch Images Start -->
-                      <a href="#"><img src="assets/image/cache/catalog/product/32-282x245.jpg"
-                          class="img-responsive second-img" alt="hover image" /></a>
-
-
-
-
-
-
-                      <!-- End -->
-                    </div>
-                    <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
-
-                      <h4 class="protitle"><a href="#">GC Watcges
-                          SSport class xxl gents black and rose Gold x76004G2s</a></h4>
-
-                      <div class="price">
-                        QAR 123.20
-                      </div>
-
-                    </div>
-
-
-
-                  </div>
-                </div>
-
-
-
-                <div class="product-layout leftpro col-xs-12">
-                  <div class="product-thumb transition">
-                    <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
-                          src="assets/image/cache/catalog/product/23-282x245.jpg" alt="justo hendrerit tempor a in "
-                          title="justo hendrerit tempor a in " class="img-responsive center-block" /></a>
-                      <!-- Webiarch Images Start -->
-                      <a href="#"><img src="assets/image/cache/catalog/product/24-282x245.jpg"
-                          class="img-responsive second-img" alt="hover image" /></a>
-
-
-
-
-
-                      <!-- End -->
-                    </div>
-                    <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
-
-                      <h4 class="protitle"><a href="#">CROSS pen &
-                          pencil set 350105 Classic Century </a></h4>
-
-                      <div class="price">
-                        QAR 90
-                      </div>
-
-                    </div>
-
-
-
-                  </div>
-                </div>
-
-
-
-                <div class="product-layout leftpro col-xs-12">
-                  <div class="product-thumb transition">
-                    <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
-                          src="assets/image/cache/catalog/product/37-282x245.jpg" alt="Nulla id urna ac purus dictum"
-                          title="Nulla id urna ac purus dictum" class="img-responsive center-block" /></a>
-                      <!-- Webiarch Images Start -->
-                      <a href="#"><img src="assets/image/cache/catalog/product/38-282x245.jpg"
-                          class="img-responsive second-img" alt="hover image" /></a>
-
-
-
-
-
-
-                      <!-- End -->
-                    </div>
-                    <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
-
-                      <h4 class="protitle"><a href="#">Nulla id urna
-                          ac purus dictum</a></h4>
-
-                      <div class="price">
-                        QAR 1,202.00
-                      </div>
-
-                    </div>
-
-
-
-                  </div>
-                </div>
-
-
-
-                <div class="product-layout leftpro col-xs-12">
-                  <div class="product-thumb transition">
-                    <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
-                          src="assets/image/cache/catalog/product/15-282x245.jpg"
-                          alt="Fusce sit amet consectetur libero" title="Fusce sit amet consectetur libero"
-                          class="img-responsive center-block" /></a>
-                      <!-- Webiarch Images Start -->
-                      <a href="#"><img src="assets/image/cache/catalog/product/16-282x245.jpg"
-                          class="img-responsive second-img" alt="hover image" /></a>
-
-
-
-
-
-
-                      <!-- End -->
-                    </div>
-                    <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
-
-                      <h4 class="protitle"><a href="#">Fusce sit amet
-                          consectetur libero</a></h4>
-
-                      <div class="price">
-                        QAR 241.99
-                      </div>
-
-                    </div>
-
-
-
-                  </div>
-                </div>
-
-
-
-                <div class="product-layout leftpro col-xs-12">
-                  <div class="product-thumb transition">
-                    <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
-                          src="assets/image/cache/catalog/product/33-282x245.jpg" alt="Pellentesque ac justo pulvinar"
-                          title="Pellentesque ac justo pulvinar" class="img-responsive center-block" /></a>
-                      <!-- Webiarch assets/images Start -->
-                      <a href="#"><img src="assets/image/cache/catalog/product/34-282x245.jpg"
-                          class="img-responsive second-img" alt="hover image" /></a>
-
-
-
-
-
-                      <!-- End -->
-                    </div>
-                    <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
-
-                      <h4 class="protitle"><a href="#">Pellentesque
-                          ac justo pulvinar</a></h4>
-
-                      <div class="price">
-                        QAR 120
-                      </div>
-
-                    </div>
-
-
-
-                  </div>
-                </div>
-
-
-
-                <div class="product-layout leftpro col-xs-12">
-                  <div class="product-thumb transition">
-                    <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
-                          src="assets/image/cache/catalog/product/1-282x245.jpg" alt=" Marc Jacobs MJ 515 S Sunglasses"
-                          title=" Marc Jacobs MJ 515 S Sunglasses" class="img-responsive center-block" /></a>
-                      <!-- Webiarch Images Start -->
-                      <a href="#"><img src="assets/image/cache/catalog/product/2-282x245.jpg"
-                          class="img-responsive second-img" alt="hover image" /></a>
-
-
-
-
-
-
-                      <!-- End -->
-                    </div>
-                    <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
-
-                      <h4 class="protitle"><a href="#"> Marc Jacobs
-                          MJ 515 S Sunglasses</a></h4>
-
-                      <div class="price">
-                        <span class="price-new">QAR 119.60</span> <span class="price-old">QAR 120</span>
-                      </div>
-
-                    </div>
-
-
-
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="multi-row">
-
-                <div class="product-layout leftpro col-xs-12">
-                  <div class="product-thumb transition">
-                    <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
-                          src="assets/image/cache/catalog/product/21-282x245.jpg"
-                          alt="Chance Chanel Eau Vive Hair Mist 35ml" title="Chance Chanel Eau Vive Hair Mist 35ml"
-                          class="img-responsive center-block" /></a>
-                      <!-- Webiarch Images Start -->
-                      <a href="#"><img src="assets/image/cache/catalog/product/22-282x245.jpg"
-                          class="img-responsive second-img" alt="hover image" /></a>
-
-
-
-
-
-
-                      <!-- End -->
-                    </div>
-                    <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
-
-                      <h4 class="protitle"><a href="#">Chance Chanel
-                          Eau Vive Hair Mist 35ml</a></h4>
-
-                      <div class="price">
-                        QAR 80
-                      </div>
-
-                    </div>
-
-
-
-                  </div>
-                </div>
-
-
-              </div>
-
-            </div>
-          </div>
-          <script type="text/javascript">
-            $(document).ready(function () {
-              $("#arrivel").owlCarousel({
-                itemsCustom: [
-                  [0, 1],
-                  [320, 1],
-                  [480, 2],
-                  [768, 1],
-                  [1200, 1],
-                  [1410, 1],
-                  [1600, 1]
-                ],
-                // autoPlay: 1000,
-                navigationText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
-                navigation: true,
-                pagination: false
-              });
-            });
-          </script>
-
-
-          <div id="banner0">
-            <div class="banner-wrapper">
-              <div class="banner-slide"><a href="#"><img src="assets/image/offer.png" alt="bnrth"
-                    class="img-responsive" /></a></div>
-            </div>
-          </div>
-
+     
         </aside>
 
         <div id="content" class="col-sm-9 col-md-9">
+          <div class="row">
+            <div class="timerpro onspro next-prevb">
+              <div class="head-t">
+                <h4 class="heading"><svg width="15px" height="15px">
+                    <use xlink:href="#star"></use>
+                  </svg><span>daily deal</span></h4>
+                <hr>
+              </div>
+              <div class="row rless">
+                <div id="count" class="owl-theme owl-carousel fnb">
+                  <div class="product-layout col-xs-12 cless">
+                    <div class="product-thumb transition">
+                      <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/1-282x245.jpg"
+                            alt=" Marc Jacobs MJ 515 S Sunglasses" title=" Marc Jacobs MJ 515 S Sunglasses"
+                            class="img-responsive" /></a>
+                        <!-- Webiarch Images Start -->
+                        <a href="#"><img src="assets/image/cache/catalog/product/2-282x245.jpg"
+                            class="img-responsive second-img" alt="hover image" /></a>
+                        <!-- Webiarch Images End -->
+                        <h3 class="sale">sale</h3>
 
-          <div class="h-ser">
-            <div class="row ser-mbt deliveryinfo">
-              <div class="col-xs-12 col-sm-3 ses1 ses">
-                <ul>
-                  <li class="ser-svg"><svg width="41px" height="40px">
-                      <use xlink:href="#suprt"></use>
-                    </svg></li>
-                  <li class="ser-t">
-                    <h4>24/7 free support</h4>
-                    <p>Passage of Lorem Ipsum</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-xs-12 col-sm-3 ses2 ses">
-                <ul>
-                  <li class="ser-svg"><svg width="41px" height="40px">
-                      <use xlink:href="#safe"></use>
-                    </svg></li>
-                  <li class="ser-t">
-                    <h4>secure payment</h4>
-                    <p>Passage of Lorem Ipsum</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-xs-12 col-sm-3 ses3 ses">
-                <ul>
-                  <li class="ser-svg"><svg width="50px" height="40px">
-                      <use xlink:href="#gift"></use>
-                    </svg></li>
-                  <li class="ser-t">
-                    <h4>special gift cards</h4>
-                    <p>Passage of Lorem Ipsum</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-xs-12 col-sm-3 ses4 ses">
-                <ul>
-                  <li class="ser-svg"><svg width="41px" height="40px">
-                      <use xlink:href="#cust"></use>
-                    </svg></li>
-                  <li class="ser-t">
-                    <h4>world wide shipping</h4>
-                    <p>Passage of Lorem Ipsum</p>
-                  </li>
-                </ul>
+
+                      </div>
+                      <div class="caption text-center">
+
+                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                        </div>
+
+                        <h4 class="protitle"><a href="#"> Marc Jacobs
+                            MJ 515 S Sunglasses</a></h4>
+
+                        <div class="price">
+                          <span class="price-new">QAR 119.60</span> <span class="price-old">QAR 120</span>
+                        </div>
+                        <div id="Countdown48" class="box-timer"></div>
+
+
+                      </div>
+
+
+                      <script type="text/javascript">
+                        $(document).ready(function () {
+                          $('#Countdown48').countdown({
+                            until: new Date(2021, 10 - 1, 03, 00, 00, 00),
+                            labels: ['Years', 'Months', 'Weeks', 'Days', 'Hrs', 'Mins', 'Secs'],
+                            labels1: ['Year', 'Month', 'Week', 'Day', 'Hr', 'Min', 'Sec'],
+                          });
+                          //$('#Countdown<?php echo $product['product_id'];?>').countdown('pause');
+                        });
+                      </script>
+                    </div>
+                  </div>
+                  <div class="product-layout col-xs-12 cless">
+                    <div class="product-thumb transition">
+                      <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/11-282x245.jpg"
+                            alt="Aliquam vitae eleifend dolor" title="Aliquam vitae eleifend dolor"
+                            class="img-responsive" /></a>
+                        <!-- Webiarch Images Start -->
+                        <a href="#"><img src="assets/image/cache/catalog/product/12-282x245.jpg"
+                            class="img-responsive second-img" alt="hover image" /></a>
+                        <!-- Webiarch Images End -->
+                        <h3 class="sale">sale</h3>
+
+
+                      </div>
+                      <div class="caption text-center">
+
+                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                        </div>
+
+                        <h4 class="protitle"><a href="#">Aliquam vitae
+                            eleifend dolor</a></h4>
+
+                        <div class="price">
+                          <span class="price-new">QAR 119.60</span> <span class="price-old">QAR 120</span>
+                        </div>
+                        <div id="Countdown36" class="box-timer"></div>
+
+
+                      </div>
+
+
+                      <script type="text/javascript">
+                        $(document).ready(function () {
+                          $('#Countdown36').countdown({
+                            until: new Date(2022, 02 - 1, 20, 00, 00, 00),
+                            labels: ['Years', 'Months', 'Weeks', 'Days', 'Hrs', 'Mins', 'Secs'],
+                            labels1: ['Year', 'Month', 'Week', 'Day', 'Hr', 'Min', 'Sec'],
+                          });
+                          //$('#Countdown<?php echo $product['product_id'];?>').countdown('pause');
+                        });
+                      </script>
+                    </div>
+                  </div>
+
+
+
+                </div>
               </div>
             </div>
+
+            <script type="text/javascript">
+              $(document).ready(function () {
+                $("#count").owlCarousel({
+                  itemsCustom: [
+                    [0, 1],
+                    [360, 1],
+                    [450, 2],
+                    [650, 3],
+                    [768, 1],
+                    [992, 1],
+                    [1200, 1],
+                    [1590, 1]
+                  ],
+                  // autoPlay: 1000,
+                  navigationText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+                  navigation: true,
+                  pagination: false
+                });
+              });
+            </script>
+
+            <div class="bestseller onspro next-prevb">
+              <div class="head-t">
+                <h4 class="heading"><svg width="15px" height="15px">
+                    <use xlink:href="#star"></use>
+                  </svg><span>Top rated</span></h4>
+                <hr>
+              </div>
+              <div class="row">
+                <div id="bestleft" class="owl-theme owl-carousel">
+
+                  <div class="multi-row">
+                    <!-- writ code Here -->
+                    <div class="product-layout col-xs-12">
+                      <div class="product-thumb transition">
+                        <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
+                              src="assets/image/cache/catalog/product/27-282x245.jpg" alt="Mauris non neque massa"
+                              title="Mauris non neque massa" class="img-responsive center-block" /></a>
+                          <!-- Webiarch Images Start -->
+                          <a href="#"><img src="assets/image/cache/catalog/product/28-282x245.jpg"
+                              class="img-responsive second-img" alt="hover image" /></a>
+
+
+
+
+
+
+                          <!-- End -->
+                        </div>
+                        <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
+                          <h4 class="protitle"><a href="#">Mauris non
+                              neque massa</a></h4>
+
+                          <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                          </div>
+
+                          <div class="price">
+                            QAR 242.00
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <!-- writ code Here End -->
+
+
+                    <!-- writ code Here -->
+                    <div class="product-layout col-xs-12">
+                      <div class="product-thumb transition">
+                        <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
+                              src="assets/image/cache/catalog/product/47-282x245.jpg" alt="vulputate luctus lectus ac"
+                              title="vulputate luctus lectus ac" class="img-responsive center-block" /></a>
+                          <!-- Webiarch Images Start -->
+                          <a href="#"><img src="assets/image/cache/catalog/product/48-282x245.jpg"
+                              class="img-responsive second-img" alt="hover image" /></a>
+
+
+
+
+
+                          <!-- End -->
+                        </div>
+                        <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
+                          <h4 class="protitle"><a href="#">vulputate
+                              luctus lectus ac</a></h4>
+
+                          <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                          </div>
+
+                          <div class="price">
+                            QAR 2,000.00
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <!-- writ code Here End -->
+
+
+                    <!-- writ code Here -->
+                    <div class="product-layout col-xs-12">
+                      <div class="product-thumb transition">
+                        <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
+                              src="assets/image/cache/catalog/product/42-282x245.jpg"
+                              alt="Vestibulum quis volutpat urna" title="Vestibulum quis volutpat urna"
+                              class="img-responsive center-block" /></a>
+                          <!-- Webiarch Images Start -->
+                          <a href="#"><img src="assets/image/cache/catalog/product/41-282x245.jpg"
+                              class="img-responsive second-img" alt="hover image" /></a>
+
+
+
+
+
+                          <!-- End -->
+                        </div>
+                        <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
+                          <h4 class="protitle"><a href="#">كاميرا نيكون
+                              مستعمله نظيف
+                            </a></h4>
+
+                          <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                          </div>
+
+                          <div class="price">
+                            QAR 1500
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <!-- writ code Here End -->
+                  </div>
+
+
+                  <div class="multi-row">
+                    <!-- writ code Here -->
+                    <div class="product-layout col-xs-12">
+                      <div class="product-thumb transition">
+                        <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
+                              src="assets/image/cache/catalog/product/21-282x245.jpg"
+                              alt="Chance Chanel Eau Vive Hair Mist 35ml" title="Chance Chanel Eau Vive Hair Mist 35ml"
+                              class="img-responsive center-block" /></a>
+                          <!-- Webiarch Images Start -->
+                          <a href="#"><img src="assets/image/cache/catalog/product/22-282x245.jpg"
+                              class="img-responsive second-img" alt="hover image" /></a>
+
+
+
+
+
+
+                          <!-- End -->
+                        </div>
+                        <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
+                          <h4 class="protitle"><a href="#">Chance
+                              Chanel Eau Vive Hair Mist 35ml</a></h4>
+
+                          <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                          </div>
+
+                          <div class="price">
+                            QAR 120
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <!-- writ code Here End -->
+
+
+                    <!-- writ code Here -->
+                    <div class="product-layout col-xs-12">
+                      <div class="product-thumb transition">
+                        <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
+                              src="assets/image/cache/catalog/product/11-282x245.jpg" alt="Aliquam vitae eleifend dolor"
+                              title="Aliquam vitae eleifend dolor" class="img-responsive center-block" /></a>
+                          <!-- Webiarch Images Start -->
+                          <a href="#"><img src="assets/image/cache/catalog/product/12-282x245.jpg"
+                              class="img-responsive second-img" alt="hover image" /></a>
+
+
+
+
+
+
+                          <!-- End -->
+                        </div>
+                        <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
+                          <h4 class="protitle"><a href="#">Aliquam
+                              vitae eleifend dolor</a></h4>
+
+                          <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                          </div>
+
+                          <div class="price">
+                            <span class="price-new">QAR 119.60</span> <span class="price-old">QAR 120</span>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <!-- writ code Here End -->
+
+
+                    <!-- writ code Here -->
+                    <div class="product-layout col-xs-12">
+                      <div class="product-thumb transition">
+                        <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
+                              src="assets/image/cache/catalog/product/37-282x245.jpg"
+                              alt="Nulla id urna ac purus dictum" title="Nulla id urna ac purus dictum"
+                              class="img-responsive center-block" /></a>
+                          <!-- Webiarch Images Start -->
+                          <a href="#"><img src="assets/image/cache/catalog/product/38-282x245.jpg"
+                              class="img-responsive second-img" alt="hover image" /></a>
+
+
+
+
+
+
+                          <!-- End -->
+                        </div>
+                        <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
+                          <h4 class="protitle"><a href="#">Nulla id
+                              urna ac purus dictum</a></h4>
+
+                          <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                          </div>
+
+                          <div class="price">
+                            QAR 1,202.00
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <!-- writ code Here End -->
+                  </div>
+
+
+                  <div class="multi-row">
+                    <!-- writ code Here -->
+                    <div class="product-layout col-xs-12">
+                      <div class="product-thumb transition">
+                        <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
+                              src="assets/image/cache/catalog/product/33-282x245.jpg"
+                              alt="Pellentesque ac justo pulvinar" title="Pellentesque ac justo pulvinar"
+                              class="img-responsive center-block" /></a>
+                          <!-- Webiarch Images Start -->
+                          <a href="#"><img src="assets/image/cache/catalog/product/34-282x245.jpg"
+                              class="img-responsive second-img" alt="hover image" /></a>
+
+
+
+
+
+                          <!-- End -->
+                        </div>
+                        <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
+                          <h4 class="protitle"><a href="#">Pellentesque
+                              ac justo pulvinar</a></h4>
+
+                          <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                          </div>
+
+                          <div class="price">
+                            QAR 120
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <!-- writ code Here End -->
+
+
+                    <!-- writ code Here -->
+                    <div class="product-layout col-xs-12">
+                      <div class="product-thumb transition">
+                        <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
+                              src="assets/image/cache/catalog/product/35-282x245.jpg" alt="Lancome Tresor in love 50ml"
+                              title="Lancome Tresor in love 50ml" class="img-responsive center-block" /></a>
+                          <!-- Webiarch Images Start -->
+                          <a href="#"><img src="assets/image/cache/catalog/product/36-282x245.jpg"
+                              class="img-responsive second-img" alt="hover image" /></a>
+
+
+
+
+
+                          <!-- End -->
+                        </div>
+                        <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
+                          <h4 class="protitle"><a href="#">Lancome
+                              Tresor in love 50ml</a></h4>
+
+                          <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                          </div>
+
+                          <div class="price">
+                            QAR 120
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <!-- writ code Here End -->
+
+
+                    <!-- writ code Here -->
+                    <div class="product-layout col-xs-12">
+                      <div class="product-thumb transition">
+                        <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
+                              src="assets/image/cache/catalog/product/8-282x245.jpg" alt="rutrum diam risus, non"
+                              title="rutrum diam risus, non" class="img-responsive center-block" /></a>
+                          <!-- Webiarch Images Start -->
+                          <a href="#"><img src="assets/image/cache/catalog/product/7-282x245.jpg"
+                              class="img-responsive second-img" alt="hover image" /></a>
+
+
+
+
+
+                          <!-- End -->
+                        </div>
+                        <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
+                          <h4 class="protitle"><a href="#">rutrum diam
+                              risus, non</a></h4>
+
+                          <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                          </div>
+
+                          <div class="price">
+                            QAR 98.00
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <!-- writ code Here End -->
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+            <script type="text/javascript">
+              $(document).ready(function () {
+                $("#bestleft").owlCarousel({
+                  itemsCustom: [
+                    [0, 1],
+                    [480, 2],
+                    [768, 1],
+                    [992, 1],
+                    [1200, 2],
+                    [1410, 2],
+                    [1600, 2]
+                  ],
+                  // autoPlay: 1000,
+                  navigationText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+                  navigation: true,
+                  pagination: false
+                });
+              });
+            </script>
           </div>
+       
           <script type="text/javascript">
             $(document).ready(function () {
               $("#testi").owlCarousel({
@@ -2636,8 +2900,8 @@
                       aria-controls="Products" aria-selected="true">All Products</a>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="Used-tab" data-toggle="pill" href="#Used" role="tab"
-                      aria-controls="Used" aria-selected="false">Used</a>
+                    <a class="nav-link" id="Used-tab" data-toggle="pill" href="#Used" role="tab" aria-controls="Used"
+                      aria-selected="false">Used</a>
                   </li>
                   <li class="nav-item" role="presentation">
                     <a class="nav-link" id="Electronic-tab" data-toggle="pill" href="#Electronic" role="tab"
@@ -2648,12 +2912,12 @@
                       aria-controls="Perfumes" aria-selected="true">Perfumes and cosmetics</a>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="Men-tab" data-toggle="pill" href="#Men" role="tab"
-                      aria-controls="Men" aria-selected="false">Men</a>
+                    <a class="nav-link" id="Men-tab" data-toggle="pill" href="#Men" role="tab" aria-controls="Men"
+                      aria-selected="false">Men</a>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="Women-tab" data-toggle="pill" href="#Women" role="tab"
-                      aria-controls="Women" aria-selected="false">Women</a>
+                    <a class="nav-link" id="Women-tab" data-toggle="pill" href="#Women" role="tab" aria-controls="Women"
+                      aria-selected="false">Women</a>
                   </li>
                   <li class="nav-item" role="presentation">
                     <a class="nav-link" id="Wanted-tab" data-toggle="pill" href="#Wanted" role="tab"
@@ -2662,106 +2926,106 @@
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
                   <div class="tab-pane fade  active in" id="Products" role="tabpanel" aria-labelledby="Products-tab">
-                        <div class=" col-lg-3 col-md-6 col-xs-12 catsp">
-                          <div class="catf">
-                            <a href="#" class="">
-                              <div class="ctimg block-cat-wr">
-                                <img class="img-responsive" src="assets/image/cache/catalog/Category/4-260x260.jpg"
-                                  class="img-responsive center-block" alt="">
-    
-                              </div>
-                            </a>
+                    <div class=" col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/4-260x260.jpg"
+                              class="img-responsive center-block" alt="">
+
                           </div>
-    
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                          <div class="catf">
-                            <a href="#" class="">
-                              <div class="ctimg block-cat-wr">
-                                <img class="img-responsive" src="assets/image/cache/catalog/Category/6-260x260.jpg"
-                                  class="img-responsive center-block" alt="">
-    
-                              </div>
-                            </a>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/6-260x260.jpg"
+                              class="img-responsive center-block" alt="">
+
                           </div>
-    
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                          <div class="catf">
-                            <a href="#" class="">
-                              <div class="ctimg block-cat-wr">
-                                <img class="img-responsive" src="assets/image/cache/catalog/Category/7-260x260.jpg"
-                                  class="img-responsive center-block" alt="">
-    
-                              </div>
-                            </a>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/7-260x260.jpg"
+                              class="img-responsive center-block" alt="">
+
                           </div>
-    
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                          <div class="catf">
-                            <a href="#" class="">
-                              <div class="ctimg block-cat-wr">
-                                <img class="img-responsive" src="assets/image/cache/catalog/Category/3-260x260.jpg"
-                                  class="img-responsive center-block" alt="">
-    
-                              </div>
-                            </a>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/3-260x260.jpg"
+                              class="img-responsive center-block" alt="">
+
                           </div>
-    
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                          <div class="catf">
-                            <a href="#" class="">
-                              <div class="ctimg block-cat-wr">
-                                <img class="img-responsive" src="assets/image/cache/catalog/Category/1-260x260.jpg"
-                                  class="img-responsive center-block" alt="">
-    
-                              </div>
-                            </a>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/1-260x260.jpg"
+                              class="img-responsive center-block" alt="">
+
                           </div>
-    
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                          <div class="catf">
-                            <a href="#" class="">
-                              <div class="ctimg block-cat-wr">
-                                <img class="img-responsive" src="assets/image/cache/catalog/Category/6-260x260.jpg"
-                                  class="img-responsive center-block" alt="">
-    
-                              </div>
-                            </a>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/6-260x260.jpg"
+                              class="img-responsive center-block" alt="">
+
                           </div>
-    
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                          <div class="catf">
-                            <a href="#" class="">
-                              <div class="ctimg block-cat-wr">
-                                <img class="img-responsive" src="assets/image/cache/catalog/Category/8-260x260.jpg"
-                                  class="img-responsive center-block" alt="">
-    
-                              </div>
-                            </a>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/8-260x260.jpg"
+                              class="img-responsive center-block" alt="">
+
                           </div>
-    
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                          <div class="catf">
-                            <a href="#" class="">
-                              <div class="ctimg block-cat-wr">
-                                <img class="img-responsive" src="assets/image/cache/catalog/Category/10-260x260.jpg"
-                                  class="img-responsive center-block" alt="">
-    
-                              </div>
-                            </a>
+                        </a>
+                      </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/10-260x260.jpg"
+                              class="img-responsive center-block" alt="">
+
                           </div>
-    
-                        </div>
-             
-                    
+                        </a>
+                      </div>
+
+                    </div>
+
+
                   </div>
-                  <div class="tab-pane fade" id="Used" role="tabpanel" aria-labelledby="Used-tab"> 
+                  <div class="tab-pane fade" id="Used" role="tabpanel" aria-labelledby="Used-tab">
                     <div class=" col-lg-3 col-md-6 col-xs-12 catsp">
                       <div class="catf">
                         <a href="#" class="">
@@ -2859,8 +3123,8 @@
 
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="Electronic" role="tabpanel" aria-labelledby="Electronic-tab">  
-        
+                  <div class="tab-pane fade" id="Electronic" role="tabpanel" aria-labelledby="Electronic-tab">
+
                     <div class="col-lg-3 col-md-6 col-xs-12 catsp">
                       <div class="catf">
                         <a href="#" class="">
@@ -3055,311 +3319,367 @@
                       </div>
 
                     </div>
-         
-                
-              </div>
-              <div class="tab-pane fade" id="Men" role="tabpanel" aria-labelledby="Men-tab"> 
-                <div class=" col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/4-260x260.jpg"
-                          class="img-responsive center-block" alt="">
 
-                      </div>
-                    </a>
+
                   </div>
+                  <div class="tab-pane fade" id="Men" role="tabpanel" aria-labelledby="Men-tab">
+                    <div class=" col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/4-260x260.jpg"
+                              class="img-responsive center-block" alt="">
 
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/6-260x260.jpg"
-                          class="img-responsive center-block" alt="">
-
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
 
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/7-260x260.jpg"
-                          class="img-responsive center-block" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/6-260x260.jpg"
+                              class="img-responsive center-block" alt="">
 
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
 
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/3-260x260.jpg"
-                          class="img-responsive center-block" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/7-260x260.jpg"
+                              class="img-responsive center-block" alt="">
 
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
 
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/1-260x260.jpg"
-                          class="img-responsive center-block" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/3-260x260.jpg"
+                              class="img-responsive center-block" alt="">
 
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
 
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/6-260x260.jpg"
-                          class="img-responsive center-block" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/1-260x260.jpg"
+                              class="img-responsive center-block" alt="">
 
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
 
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/8-260x260.jpg"
-                          class="img-responsive center-block" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/6-260x260.jpg"
+                              class="img-responsive center-block" alt="">
 
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
 
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/10-260x260.jpg"
-                          class="img-responsive center-block" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/8-260x260.jpg"
+                              class="img-responsive center-block" alt="">
 
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
 
-                </div>
-              </div>
-              <div class="tab-pane fade" id="Women" role="tabpanel" aria-labelledby="Women-tab">  
-    
-                <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/1-260x260.jpg"
-                          class="img-responsive center-block" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/10-260x260.jpg"
+                              class="img-responsive center-block" alt="">
 
+                          </div>
+                        </a>
                       </div>
-                    </a>
+
+                    </div>
                   </div>
+                  <div class="tab-pane fade" id="Women" role="tabpanel" aria-labelledby="Women-tab">
 
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/6-260x260.jpg"
-                          class="img-responsive center-block" alt="">
 
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/1-260x260.jpg"
+                              class="img-responsive center-block" alt="">
+
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
 
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/8-260x260.jpg"
-                          class="img-responsive center-block" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/6-260x260.jpg"
+                              class="img-responsive center-block" alt="">
 
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
 
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/10-260x260.jpg"
-                          class="img-responsive center-block" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/8-260x260.jpg"
+                              class="img-responsive center-block" alt="">
 
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
 
-                </div>
-                <div class=" col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/4-260x260.jpg"
-                          class="img-responsive center-block" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/10-260x260.jpg"
+                              class="img-responsive center-block" alt="">
 
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
 
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/6-260x260.jpg"
-                          class="img-responsive center-block" alt="">
+                    </div>
+                    <div class=" col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/4-260x260.jpg"
+                              class="img-responsive center-block" alt="">
 
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
 
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/7-260x260.jpg"
-                          class="img-responsive center-block" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/6-260x260.jpg"
+                              class="img-responsive center-block" alt="">
 
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
 
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/3-260x260.jpg"
-                          class="img-responsive center-block" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/7-260x260.jpg"
+                              class="img-responsive center-block" alt="">
 
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
 
-                </div>
-              </div>
-              <div class="tab-pane fade" id="Wanted" role="tabpanel" aria-labelledby="Wanted-tab">  
-    
-                <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/1-260x260.jpg"
-                          class="img-responsive center-block" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/3-260x260.jpg"
+                              class="img-responsive center-block" alt="">
 
+                          </div>
+                        </a>
                       </div>
-                    </a>
+
+                    </div>
                   </div>
+                  <div class="tab-pane fade" id="Wanted" role="tabpanel" aria-labelledby="Wanted-tab">
 
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/6-260x260.jpg"
-                          class="img-responsive center-block" alt="">
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/1-260x260.jpg"
+                              class="img-responsive center-block" alt="">
 
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
 
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/8-260x260.jpg"
-                          class="img-responsive center-block" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/6-260x260.jpg"
+                              class="img-responsive center-block" alt="">
 
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
 
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/10-260x260.jpg"
-                          class="img-responsive center-block" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/8-260x260.jpg"
+                              class="img-responsive center-block" alt="">
 
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
 
-                </div>
-                <div class=" col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/4-260x260.jpg"
-                          class="img-responsive center-block" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/10-260x260.jpg"
+                              class="img-responsive center-block" alt="">
 
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
 
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/6-260x260.jpg"
-                          class="img-responsive center-block" alt="">
+                    </div>
+                    <div class=" col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/4-260x260.jpg"
+                              class="img-responsive center-block" alt="">
 
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
 
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/7-260x260.jpg"
-                          class="img-responsive center-block" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/6-260x260.jpg"
+                              class="img-responsive center-block" alt="">
 
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
 
-                </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 catsp">
-                  <div class="catf">
-                    <a href="#" class="">
-                      <div class="ctimg block-cat-wr">
-                        <img class="img-responsive" src="assets/image/cache/catalog/Category/3-260x260.jpg"
-                          class="img-responsive center-block" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/7-260x260.jpg"
+                              class="img-responsive center-block" alt="">
 
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
 
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 catsp">
+                      <div class="catf">
+                        <a href="#" class="">
+                          <div class="ctimg block-cat-wr">
+                            <img class="img-responsive" src="assets/image/cache/catalog/Category/3-260x260.jpg"
+                              class="img-responsive center-block" alt="">
+
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
                 </div>
-              </div>
-                </div>
-             
+
               </div>
             </div>
           </div>
-      
+          <div class="onspro next-prevb">
+            <div class="head-t">
+              <h4 class="heading"><svg width="15px" height="15px">
+                  <use xlink:href="#star"></use>
+                </svg><span>Stores</span></h4>
+              <hr>
+            </div>
+            <div id="store" class="owl-theme owl-carousel fnb">
+              <div class="storeItem">
+                <h6>Qatar Mall</h6>
+              <a href="">
+                <img src="assets/image/qatqr.png" alt="">
+              </a>
+              </div>
+              <div class="storeItem">
+                <h6>Doha Festival <br>City</h6>
+                <img src="assets/image/doha.png" alt="">
+              </div>
+              <div class="storeItem">
+                <h6>  Alhazem Mall</h6>
+              
+                <img src="assets/image/alhazem.png" alt="">
+              </div>
+              <div class="storeItem">
+                <h6>Landmark</h6>
+                <img src="assets/image/Landmark.png" alt="">
+              </div>
+              <div class="storeItem">
+                <h6>Qatar Mall</h6>
+                <img src="assets/image/qatqr.png" alt="">
+              </div>
+            </div>
+            
+            <script type="text/javascript">
+              $(document).ready(function () {
+                $("#store").owlCarousel({
+                  itemsCustom: [
+                    [0, 1],
+                    [320, 2],
+                    [576, 3],
+                    [700, 3],
+                    [768, 2],
+                    [900, 3],
+                    [1200, 4],
+                    [1410, 4]
+                  ],
+                 
+                  // autoPlay: 1000,
+                  navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                  navigation: true,
+                  pagination: false
+                });
+              });
+            </script>
+          
+          </div>
           <div class="offerbnr">
             <div class="sub-img-banner">
               <div class="beffect">
@@ -5137,512 +5457,7 @@
           </div>
 
 
-          <div class="timerpro onspro next-prevb">
-            <div class="head-t">
-              <h4 class="heading"><svg width="15px" height="15px">
-                  <use xlink:href="#star"></use>
-                </svg><span>daily deal</span></h4>
-              <hr>
-            </div>
-            <div class="row rless">
-              <div id="count" class="owl-theme owl-carousel fnb">
-                <div class="product-layout col-xs-12 cless">
-                  <div class="product-thumb transition">
-                    <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/1-282x245.jpg"
-                          alt=" Marc Jacobs MJ 515 S Sunglasses" title=" Marc Jacobs MJ 515 S Sunglasses"
-                          class="img-responsive" /></a>
-                      <!-- Webiarch Images Start -->
-                      <a href="#"><img src="assets/image/cache/catalog/product/2-282x245.jpg"
-                          class="img-responsive second-img" alt="hover image" /></a>
-                      <!-- Webiarch Images End -->
-                      <h3 class="sale">sale</h3>
 
-
-                    </div>
-                    <div class="caption text-center">
-
-                      <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                      </div>
-
-                      <h4 class="protitle"><a href="#"> Marc Jacobs
-                          MJ 515 S Sunglasses</a></h4>
-
-                      <div class="price">
-                        <span class="price-new">QAR 119.60</span> <span class="price-old">QAR 120</span>
-                      </div>
-                      <div id="Countdown48" class="box-timer"></div>
-
-
-                    </div>
-
-
-                    <script type="text/javascript">
-                      $(document).ready(function () {
-                        $('#Countdown48').countdown({
-                          until: new Date(2021, 10 - 1, 03, 00, 00, 00),
-                          labels: ['Years', 'Months', 'Weeks', 'Days', 'Hrs', 'Mins', 'Secs'],
-                          labels1: ['Year', 'Month', 'Week', 'Day', 'Hr', 'Min', 'Sec'],
-                        });
-                        //$('#Countdown<?php echo $product['product_id'];?>').countdown('pause');
-                      });
-                    </script>
-                  </div>
-                </div>
-                <div class="product-layout col-xs-12 cless">
-                  <div class="product-thumb transition">
-                    <div class="image"><a href="#"><img src="assets/image/cache/catalog/product/11-282x245.jpg"
-                          alt="Aliquam vitae eleifend dolor" title="Aliquam vitae eleifend dolor"
-                          class="img-responsive" /></a>
-                      <!-- Webiarch Images Start -->
-                      <a href="#"><img src="assets/image/cache/catalog/product/12-282x245.jpg"
-                          class="img-responsive second-img" alt="hover image" /></a>
-                      <!-- Webiarch Images End -->
-                      <h3 class="sale">sale</h3>
-
-
-                    </div>
-                    <div class="caption text-center">
-
-                      <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                      </div>
-
-                      <h4 class="protitle"><a href="#">Aliquam vitae
-                          eleifend dolor</a></h4>
-
-                      <div class="price">
-                        <span class="price-new">QAR 119.60</span> <span class="price-old">QAR 120</span>
-                      </div>
-                      <div id="Countdown36" class="box-timer"></div>
-
-
-                    </div>
-
-
-                    <script type="text/javascript">
-                      $(document).ready(function () {
-                        $('#Countdown36').countdown({
-                          until: new Date(2022, 02 - 1, 20, 00, 00, 00),
-                          labels: ['Years', 'Months', 'Weeks', 'Days', 'Hrs', 'Mins', 'Secs'],
-                          labels1: ['Year', 'Month', 'Week', 'Day', 'Hr', 'Min', 'Sec'],
-                        });
-                        //$('#Countdown<?php echo $product['product_id'];?>').countdown('pause');
-                      });
-                    </script>
-                  </div>
-                </div>
-
-
-
-              </div>
-            </div>
-          </div>
-
-          <script type="text/javascript">
-            $(document).ready(function () {
-              $("#count").owlCarousel({
-                itemsCustom: [
-                  [0, 1],
-                  [360, 1],
-                  [450, 2],
-                  [650, 3],
-                  [768, 1],
-                  [992, 1],
-                  [1200, 1],
-                  [1590, 1]
-                ],
-                // autoPlay: 1000,
-                navigationText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
-                navigation: true,
-                pagination: false
-              });
-            });
-          </script>
-
-          <div class="bestseller onspro next-prevb">
-            <div class="head-t">
-              <h4 class="heading"><svg width="15px" height="15px">
-                  <use xlink:href="#star"></use>
-                </svg><span>Top rated</span></h4>
-              <hr>
-            </div>
-            <div class="row">
-              <div id="bestleft" class="owl-theme owl-carousel">
-
-                <div class="multi-row">
-                  <!-- writ code Here -->
-                  <div class="product-layout col-xs-12">
-                    <div class="product-thumb transition">
-                      <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
-                            src="assets/image/cache/catalog/product/27-282x245.jpg" alt="Mauris non neque massa"
-                            title="Mauris non neque massa" class="img-responsive center-block" /></a>
-                        <!-- Webiarch Images Start -->
-                        <a href="#"><img src="assets/image/cache/catalog/product/28-282x245.jpg"
-                            class="img-responsive second-img" alt="hover image" /></a>
-
-
-
-
-
-
-                        <!-- End -->
-                      </div>
-                      <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
-                        <h4 class="protitle"><a href="#">Mauris non
-                            neque massa</a></h4>
-
-                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                        </div>
-
-                        <div class="price">
-                          QAR 242.00
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <!-- writ code Here End -->
-
-
-                  <!-- writ code Here -->
-                  <div class="product-layout col-xs-12">
-                    <div class="product-thumb transition">
-                      <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
-                            src="assets/image/cache/catalog/product/47-282x245.jpg" alt="vulputate luctus lectus ac"
-                            title="vulputate luctus lectus ac" class="img-responsive center-block" /></a>
-                        <!-- Webiarch Images Start -->
-                        <a href="#"><img src="assets/image/cache/catalog/product/48-282x245.jpg"
-                            class="img-responsive second-img" alt="hover image" /></a>
-
-
-
-
-
-                        <!-- End -->
-                      </div>
-                      <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
-                        <h4 class="protitle"><a href="#">vulputate
-                            luctus lectus ac</a></h4>
-
-                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                        </div>
-
-                        <div class="price">
-                          QAR 2,000.00
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <!-- writ code Here End -->
-
-
-                  <!-- writ code Here -->
-                  <div class="product-layout col-xs-12">
-                    <div class="product-thumb transition">
-                      <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
-                            src="assets/image/cache/catalog/product/42-282x245.jpg" alt="Vestibulum quis volutpat urna"
-                            title="Vestibulum quis volutpat urna" class="img-responsive center-block" /></a>
-                        <!-- Webiarch Images Start -->
-                        <a href="#"><img src="assets/image/cache/catalog/product/41-282x245.jpg"
-                            class="img-responsive second-img" alt="hover image" /></a>
-
-
-
-
-
-                        <!-- End -->
-                      </div>
-                      <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
-                        <h4 class="protitle"><a href="#">كاميرا نيكون
-                            مستعمله نظيف
-                          </a></h4>
-
-                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                        </div>
-
-                        <div class="price">
-                          QAR 1500
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <!-- writ code Here End -->
-                </div>
-
-
-                <div class="multi-row">
-                  <!-- writ code Here -->
-                  <div class="product-layout col-xs-12">
-                    <div class="product-thumb transition">
-                      <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
-                            src="assets/image/cache/catalog/product/21-282x245.jpg"
-                            alt="Chance Chanel Eau Vive Hair Mist 35ml" title="Chance Chanel Eau Vive Hair Mist 35ml"
-                            class="img-responsive center-block" /></a>
-                        <!-- Webiarch Images Start -->
-                        <a href="#"><img src="assets/image/cache/catalog/product/22-282x245.jpg"
-                            class="img-responsive second-img" alt="hover image" /></a>
-
-
-
-
-
-
-                        <!-- End -->
-                      </div>
-                      <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
-                        <h4 class="protitle"><a href="#">Chance
-                            Chanel Eau Vive Hair Mist 35ml</a></h4>
-
-                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                        </div>
-
-                        <div class="price">
-                          QAR 120
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <!-- writ code Here End -->
-
-
-                  <!-- writ code Here -->
-                  <div class="product-layout col-xs-12">
-                    <div class="product-thumb transition">
-                      <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
-                            src="assets/image/cache/catalog/product/11-282x245.jpg" alt="Aliquam vitae eleifend dolor"
-                            title="Aliquam vitae eleifend dolor" class="img-responsive center-block" /></a>
-                        <!-- Webiarch Images Start -->
-                        <a href="#"><img src="assets/image/cache/catalog/product/12-282x245.jpg"
-                            class="img-responsive second-img" alt="hover image" /></a>
-
-
-
-
-
-
-                        <!-- End -->
-                      </div>
-                      <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
-                        <h4 class="protitle"><a href="#">Aliquam
-                            vitae eleifend dolor</a></h4>
-
-                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                        </div>
-
-                        <div class="price">
-                          <span class="price-new">QAR 119.60</span> <span class="price-old">QAR 120</span>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <!-- writ code Here End -->
-
-
-                  <!-- writ code Here -->
-                  <div class="product-layout col-xs-12">
-                    <div class="product-thumb transition">
-                      <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
-                            src="assets/image/cache/catalog/product/37-282x245.jpg" alt="Nulla id urna ac purus dictum"
-                            title="Nulla id urna ac purus dictum" class="img-responsive center-block" /></a>
-                        <!-- Webiarch Images Start -->
-                        <a href="#"><img src="assets/image/cache/catalog/product/38-282x245.jpg"
-                            class="img-responsive second-img" alt="hover image" /></a>
-
-
-
-
-
-
-                        <!-- End -->
-                      </div>
-                      <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
-                        <h4 class="protitle"><a href="#">Nulla id
-                            urna ac purus dictum</a></h4>
-
-                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                        </div>
-
-                        <div class="price">
-                          QAR 1,202.00
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <!-- writ code Here End -->
-                </div>
-
-
-                <div class="multi-row">
-                  <!-- writ code Here -->
-                  <div class="product-layout col-xs-12">
-                    <div class="product-thumb transition">
-                      <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
-                            src="assets/image/cache/catalog/product/33-282x245.jpg" alt="Pellentesque ac justo pulvinar"
-                            title="Pellentesque ac justo pulvinar" class="img-responsive center-block" /></a>
-                        <!-- Webiarch Images Start -->
-                        <a href="#"><img src="assets/image/cache/catalog/product/34-282x245.jpg"
-                            class="img-responsive second-img" alt="hover image" /></a>
-
-
-
-
-
-                        <!-- End -->
-                      </div>
-                      <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
-                        <h4 class="protitle"><a href="#">Pellentesque
-                            ac justo pulvinar</a></h4>
-
-                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                        </div>
-
-                        <div class="price">
-                          QAR 120
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <!-- writ code Here End -->
-
-
-                  <!-- writ code Here -->
-                  <div class="product-layout col-xs-12">
-                    <div class="product-thumb transition">
-                      <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
-                            src="assets/image/cache/catalog/product/35-282x245.jpg" alt="Lancome Tresor in love 50ml"
-                            title="Lancome Tresor in love 50ml" class="img-responsive center-block" /></a>
-                        <!-- Webiarch Images Start -->
-                        <a href="#"><img src="assets/image/cache/catalog/product/36-282x245.jpg"
-                            class="img-responsive second-img" alt="hover image" /></a>
-
-
-
-
-
-                        <!-- End -->
-                      </div>
-                      <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
-                        <h4 class="protitle"><a href="#">Lancome
-                            Tresor in love 50ml</a></h4>
-
-                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                        </div>
-
-                        <div class="price">
-                          QAR 120
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <!-- writ code Here End -->
-
-
-                  <!-- writ code Here -->
-                  <div class="product-layout col-xs-12">
-                    <div class="product-thumb transition">
-                      <div class="image col-sm-5 col-lg-5 col-xs-4"><a href="#"><img
-                            src="assets/image/cache/catalog/product/8-282x245.jpg" alt="rutrum diam risus, non"
-                            title="rutrum diam risus, non" class="img-responsive center-block" /></a>
-                        <!-- Webiarch Images Start -->
-                        <a href="#"><img src="assets/image/cache/catalog/product/7-282x245.jpg"
-                            class="img-responsive second-img" alt="hover image" /></a>
-
-
-
-
-
-                        <!-- End -->
-                      </div>
-                      <div class="caption text-left col-sm-7 col-lg-7 col-xs-8 on_sale">
-                        <h4 class="protitle"><a href="#">rutrum diam
-                            risus, non</a></h4>
-
-                        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                        </div>
-
-                        <div class="price">
-                          QAR 98.00
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <!-- writ code Here End -->
-                </div>
-
-
-              </div>
-            </div>
-          </div>
-          <script type="text/javascript">
-            $(document).ready(function () {
-              $("#bestleft").owlCarousel({
-                itemsCustom: [
-                  [0, 1],
-                  [480, 2],
-                  [768, 1],
-                  [992, 1],
-                  [1200, 2],
-                  [1410, 2],
-                  [1600, 2]
-                ],
-                // autoPlay: 1000,
-                navigationText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
-                navigation: true,
-                pagination: false
-              });
-            });
-          </script>
 
           <div class="special next-prevb">
             <div class="head-t">
@@ -5992,8 +5807,10 @@
       </div>
     </div>
   </div>
+  
   <div class="next-prevb onspro">
     <div class="container">
+      
       <div class="box blog_webi">
         <div class="head-t">
           <h4 class="heading"><svg width="15px" height="15px">
@@ -6004,8 +5821,8 @@
         <div class="box-content row">
           <div class="box-product">
             <div id="blog" class="owl-carousel owl-theme">
-              <div class="product-b col-lg-3 col-xs-12">
-                <div class="product-block">
+              <div class="product-b">
+                <div class="product-block clearfix" >
                   <div class="blog-left col-sm-5 col-xs-12">
                     <div class="webi-blog-image">
                       <img src="assets/image/cache/catalog/blog/6-1230x1013.jpg" alt="Latest Blog" title="Latest Blog"
@@ -6047,8 +5864,8 @@
                   </div>
                 </div>
               </div>
-              <div class="product-b  col-lg-3 col-xs-12">
-                <div class="product-block">
+              <div class="product-b">
+                <div class="product-block clearfix">
                   <div class="blog-left col-sm-5 col-xs-12">
                     <div class="webi-blog-image">
                       <img src="assets/image/cache/catalog/blog/7-1230x1013.jpg" alt="Latest Blog" title="Latest Blog"
@@ -6090,8 +5907,8 @@
                   </div>
                 </div>
               </div>
-              <div class="product-b col-xs-12">
-                <div class="product-block">
+              <div class="product-b ">
+                <div class="product-block clearfix">
                   <div class="blog-left col-sm-5 col-xs-12">
                     <div class="webi-blog-image">
                       <img src="assets/image/cache/catalog/blog/5-1230x1013.jpg" alt="Latest Blog" title="Latest Blog"
@@ -6133,8 +5950,8 @@
                   </div>
                 </div>
               </div>
-              <div class="product-b col-xs-12">
-                <div class="product-block">
+              <div class="product-b">
+                <div class="product-block clearfix">
                   <div class="blog-left col-sm-5 col-xs-12">
                     <div class="webi-blog-image">
                       <img src="assets/image/cache/catalog/blog/3-1230x1013.jpg" alt="Latest Blog" title="Latest Blog"
@@ -6181,11 +5998,60 @@
           </div>
         </div>
       </div>
+      <div class="h-ser">
+        <div class="row ser-mbt deliveryinfo">
+          <div class="col-xs-12 col-sm-3 ses1 ses">
+            <ul>
+              <li class="ser-svg"><svg width="41px" height="40px">
+                  <use xlink:href="#suprt"></use>
+                </svg></li>
+              <li class="ser-t">
+                <h4>24/7 free support</h4>
+                <p>Passage of Lorem Ipsum</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3 ses2 ses">
+            <ul>
+              <li class="ser-svg"><svg width="41px" height="40px">
+                  <use xlink:href="#safe"></use>
+                </svg></li>
+              <li class="ser-t">
+                <h4>secure payment</h4>
+                <p>Passage of Lorem Ipsum</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3 ses3 ses">
+            <ul>
+              <li class="ser-svg"><svg width="50px" height="40px">
+                  <use xlink:href="#gift"></use>
+                </svg></li>
+              <li class="ser-t">
+                <h4>special gift cards</h4>
+                <p>Passage of Lorem Ipsum</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-3 ses4 ses">
+            <ul>
+              <li class="ser-svg"><svg width="41px" height="40px">
+                  <use xlink:href="#cust"></use>
+                </svg></li>
+              <li class="ser-t">
+                <h4>world wide shipping</h4>
+                <p>Passage of Lorem Ipsum</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <script type="text/javascript">
     $(document).ready(function () {
       $("#blog").owlCarousel({
+        margin:10,
         itemsCustom: [
           [0, 1],
           [600, 2],
@@ -6194,10 +6060,13 @@
           [1200, 4],
           [1410, 4]
         ],
+        stagePadding: 50,
+
         // autoPlay: 1000,
         navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
         navigation: true,
-        pagination: false
+        pagination: false,
+       
       });
     });
   </script>

@@ -878,6 +878,48 @@ font-size:20px;
 .product-list.wishlistBox .product-thumb .image{
     width:25%;
 }
+.custom-control-label{
+    font-size:12px;
+    color:#747474;
+}
+.custom-control.custom-checkbox:hover .custom-control-label{
+color:#1275AC
+}
+#blog .owl-item{
+    margin:0 5px;
+}
+.owl-item div.storeItem{
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    margin:10px;
+    width:auto;
+    text-align: center;
+
+}
+.storeItem img {
+    width: 100%;
+}
+.storeItem:before{
+    position: absolute;
+    content: "";
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 1;
+}
+.storeItem h6{
+    color:white;
+    font-size: 20px;
+    position: absolute;
+    z-index: 2;
+    top: 41%;
+    left: 29%;
+}
 @media (max-width: 478px) { 
 	#cart .dropdown-menu li > div {
 		min-width: 100%;
@@ -2533,6 +2575,7 @@ a:focus, a:hover, .btn-link:focus, .btn-link:hover {
     float: left;
     width: 100%;
     clear: both;
+    margin:35px 0;
 }
 .deliveryinfo {
 	cursor: crosshair;
@@ -2885,9 +2928,9 @@ a:focus, a:hover, .btn-link:focus, .btn-link:hover {
 }
 .product-thumb .absbtn button, .product-layout .absbtn .bquickv a ,
 .product-list .button-group button.cartb{
-    background-color: black;
-    fill: white;;
-    width: 40px;
+    background-color:rgba(0,0,0,.5);
+    fill: white;
+        width: 40px;
     height: 40px;
     border-radius: 5px;
     text-align: center;
@@ -5465,6 +5508,13 @@ scroll 0 0;
 .sellb {
     margin: 30px 0 60px;
 }
+.product-b{
+    padding-bottom:10px;
+    border:1px solid #D1D1D1;
+}
+.product-block:before{
+    clear:both
+}
 
 @media (max-width: 991px) {
     .middle-footer .row {
@@ -7023,7 +7073,8 @@ height: 35px;
 	    letter-spacing: 0;
 	}
 	.product-b{
-		padding: 0px 5px;
+        padding: 0px 5px;
+  
 	}
 	.box-content.row{
 		margin-left: -5px;
@@ -7467,6 +7518,7 @@ height: 35px;
 .ac-tl {
     margin-top: 10px;
 }
+
 @media (min-width: 768px) and (max-width: 991px){
 	.crt-ttl {
     	float: right;
