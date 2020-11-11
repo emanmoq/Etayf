@@ -1702,6 +1702,7 @@ a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, 
 #tab-review #review{
 	margin-bottom: 15px;
 }
+
 .product-tab .nav-tabs li.active::after {
     height: 2px;
     width: 100%;
@@ -1862,7 +1863,7 @@ a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, 
 	border-radius: 0px;
 }
 .product-tab{
-	margin-top: 30px;
+	margin-top: 70px;
 	margin-bottom: 40px;
 	border: 1px solid #ededed;
 	border-radius: 4px;
@@ -7503,6 +7504,67 @@ height: 35px;
 .clearfix .deleteItem i{
     font-size: 30px;
 }
+.rightProduct{
+    float: right;
+}
+.productDetailsLis li{
+    margin-bottom:25px;
+}
+.checkboxCont{
+    position: relative;
+}
+.checkboxCont input{
+    width:0;
+    height: 0;;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+}
+ .checkboxCont:first-child .checkboxStyle{
+    margin-left:0;
+}
+.checkboxStyle{
+position: relative;
+    display: inline-block;
+    margin-left:7px;
+    background-color:white;
+height:30px;
+font-size:12px;
+border-radius: 5px;
+text-align:center;
+line-height: 15px;
+padding:9px 11px;
+color:#393939;
+border:1px solid #979797
+}
+.checkboxCont input[type=radio]:checked ~ .checkboxStyle {
+    background-color:#F6A400;
+    color:white;
+
+  }
+  .productColor{
+      width:25px;
+      height:25px;
+      border-radius: 50%;
+      position: relative;
+    display: inline-block;
+    margin-left:7px;
+
+
+  }
+  .productColor.yellow{
+      background-color: #EFC612;
+  }
+  .productColor.green{
+      background-color:#00C3B5;
+  }
+  .productColor.red{
+      background-color: #E32F2F;
+  }
+  .checkboxCont input[type=radio]:checked ~ .productColor {
+   
+ border:2px solid #1275AC;
+  }
 .ac-pr {
     font-size: 18px;
     margin-top: 10px;
