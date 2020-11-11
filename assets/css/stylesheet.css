@@ -4295,6 +4295,9 @@ opacity: 1;
 	margin-left: -10px;
 	margin-right: -10px;
 }
+#featured_category .tab-pane{
+    float: left;
+}
 .category-tab .tab-content > .tab-pane:not(.active), 
 .category-tab .pill-content > .pill-pane:not(.active) {
     display: block;
@@ -4418,17 +4421,17 @@ opacity: 1;
 .nav.nav-pills .nav-item{
     margin-right:10px;
 }
-.nav.nav-pills .nav-item.active{
-  
+.nav.nav-pills .nav-item.active  .nav-link{
+color:white;
 }
 .nav.nav-pills .nav-item:last-child{
     margin:0;
 }
-.nav.nav-pills .nav-item.active .nav-link{
+.nav.nav-pills .nav-item.active .nav-link {
     color:white;
     background-color: #1275AC;
 }
-.nav.nav-pills .nav-link{
+.nav.nav-pills .nav-item .nav-link{
     color:#000000;
     padding: 0;
     border: 1px solid #A8A8A8;
@@ -7491,9 +7494,24 @@ height: 35px;
     margin-bottom: 11px;
     padding: 0;
 }
+.clearfix .acnt-ttl{
+    width:auto;
+}
+.clearfix .deleteItem {
+    float:right
+}
+.clearfix .deleteItem i{
+    font-size: 30px;
+}
 .ac-pr {
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 10px;
+    color:#434342;
+    margin-bottom: 25px;
+}
+.mallName{
+    font-size: 18px;
+    color:#1275AC
 }
 .acnt-ttl {
     font-size: 18px;
