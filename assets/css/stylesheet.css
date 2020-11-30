@@ -415,7 +415,7 @@ a {
 }
 .smenus a {
     text-transform: uppercase;
-    color: #fff;
+    color: #eee6;
     font-size: 15px;
     transition: 0.3s ease;
     position: relative;
@@ -921,6 +921,31 @@ color:#1275AC
     top: 41%;
     width: 100%;
     text-align: center;
+}
+.chectable{
+    margin-top:30px;
+    text-align: left;
+}
+.CheckoutBtn{
+    width: 100%;;
+}
+.TotalTable{
+    color:#f9c826
+}
+.chectable tr td:last-child{
+    color:#adadad
+}
+.TotalTableRow{
+    border-top:1px solid #eee;
+    padding-top:20px;
+}
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{
+    border:0;
+    padding:15px  10px;
+}
+.ContinueBtn{
+    background-color:#f9c826;
+    color:white;
 }
 @media (max-width: 478px) { 
 	#cart .dropdown-menu li > div {
