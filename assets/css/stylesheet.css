@@ -950,6 +950,39 @@ color:#1275AC
 #featured_category .product-thumb .image{
 height:260px;
 }
+.storesDetails{
+    margin:20px 0;
+}
+.storesImage{
+    border:1px solid #eee;
+    border-radius: 50%;
+    overflow: hidden;
+    width:100px;
+    height:100px;
+    margin-right: 20px;
+    float:left;
+    display: inline-block;
+}
+.storeDesc  {
+    width:80%;
+    display: inline-block;
+}
+
+.storeDesc h4{
+    font-size: 26px;
+    color:black;
+    font-weight: 500;
+    margin-bottom:20px;
+}
+.storeDesc p {
+    color:#767676;
+    font-size: 14px;;
+}
+.storeDesc p i{
+    color:#0081B8;
+    margin-right:10px;
+
+}
 @media (max-width: 478px) { 
 	#cart .dropdown-menu li > div {
 		min-width: 100%;
