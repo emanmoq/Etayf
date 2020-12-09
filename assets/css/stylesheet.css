@@ -4785,6 +4785,7 @@ width:65px
 
 
 @media (min-width: 768px) and (max-width: 991px) {
+
     #search .btn-lg {
         padding: 10px 20px;
     }
@@ -4948,8 +4949,16 @@ span:last-child {
     margin-right: 7px;
     width: 15px;
 }
-
+.search-box.input-group{
+    margin-bottom: 35px;;
+}
 @media (max-width: 767px) {
+    .heroContent{
+        max-width: 100%;
+    }
+    .heroContent h1{
+        font-size:30px;
+    }
     .nav-tabs {
         text-align: left;
         margin-right: 0;
@@ -6140,6 +6149,12 @@ height: 35px;
     }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
+    .heroContent{
+        max-width: 100%;
+    }
+    .heroContent h1{
+        font-size:35px;
+    }
 	.fnb .protitle {
 		padding: 8px 0;
 	}
