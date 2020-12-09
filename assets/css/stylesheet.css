@@ -1002,6 +1002,21 @@ hr.headerHR{
 .infoForm{
     margin-top:50px;
 }
+.TotalTableRow .input-group .form-control{
+    display: block;
+    width: 100%;
+
+}
+.TotalTableRow .ContinueBtn{
+    display: block;
+    width: 100%;
+    margin-top:30px
+}
+.TotalTableRow .input-group{
+    display: block;
+    width: 100%;
+}
+         
 @media (max-width: 478px) { 
 	#cart .dropdown-menu li > div {
 		min-width: 100%;
