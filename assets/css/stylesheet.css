@@ -1016,7 +1016,11 @@ hr.headerHR{
     display: block;
     width: 100%;
 }
-         
+.thumbnails .absbtn{
+    z-index:2222222;
+
+}  
+ 
 @media (max-width: 478px) { 
 	#cart .dropdown-menu li > div {
 		min-width: 100%;
